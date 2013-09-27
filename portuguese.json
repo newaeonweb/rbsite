@@ -1,0 +1,37 @@
+
+{
+    "menu" : [
+        {
+            "portuguese" : "Portugues",
+            "english" : "Inglês",
+            "spanish" : "Espanhol"
+
+    }],
+    "slogan" : [
+        {
+            "call" : "Um Ponto de partida da o design responsivo",
+            "phrase" :"Leve ",
+            "button" : "Baixe",
+            "update" : "Última Atualização"
+
+    }],
+    "features" : [
+        {
+            "title1" : "Facil de Aprender",
+            "title2" : "Snipptes para Siblime Text 2",
+            "title3" : "Feito com Grunt.js"
+
+    }],
+    "tools"  : [
+        {
+            "toolsTitle" : "Links e Ferramentas"
+
+    }],
+
+    "footer" : [{
+
+    }]
+
+
+
+}

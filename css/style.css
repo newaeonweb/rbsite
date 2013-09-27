@@ -1,0 +1,712 @@
+/*! Copyright (c) 2013*/
+/*!Last Build: Jul2013*/
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('../typograph/bebasneue-webfont.eot');
+  src: url('../typograph/bebasneue-webfont86d7.eot?iefix') format('eot'), url('../typograph/bebasneue-webfont.woff') format('woff'), url('../typograph/bebasneue-webfont.ttf') format('truetype'), url('../typograph/bebasneue-webfont.svg#webfontMK9SVy33') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSansRegular';
+  src: url('../typograph/droidsans-webfontd41d.eot?') format('eot'), url('../typograph/droidsans-webfont.woff') format('woff'), url('../typograph/droidsans-webfont.ttf') format('truetype'), url('../typograph/droidsans-webfont.svg#webfontNN8oFgLS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PodkovaRegular';
+  src: url('../typograph/Podkova-Regular-webfont.eot');
+  src: url('../typograph/Podkova-Regular-webfontd41d.eot?#iefix') format('embedded-opentype'), url('../typograph/Podkova-Regular-webfont.woff') format('woff'), url('../typograph/Podkova-Regular-webfont.ttf') format('truetype'), url('../typograph/Podkova-Regular-webfont.svg#PodkovaRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'skarpaltultra_light';
+  src: url('../typograph/skarpalt-webfont.eot');
+  src: url('../typograph/skarpalt-webfont.eot?#iefix') format('embedded-opentype'), url('../typograph/skarpalt-webfont.woff') format('woff'), url('../typograph/skarpalt-webfont.ttf') format('truetype'), url('../typograph/skarpalt-webfont.svg#skarpaltultra_light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'responsiveBoilerplate';
+  src: url('../typograph/responsiveBoilerplate.eot');
+  src: url('../typograph/responsiveBoilerplate.eot?#iefix') format('embedded-opentype'), url('../typograph/responsiveBoilerplate.svg#responsiveBoilerplate') format('svg'), url('../typograph/responsiveBoilerplate.woff') format('woff'), url('../typograph/responsiveBoilerplate.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: 'responsiveBoilerplate';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'responsiveBoilerplate';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.5);
+}
+.icon-screen:before {
+  content: "\e000";
+}
+.icon-github:before {
+  content: "\e009";
+}
+.icon-tablet:before {
+  content: "\e001";
+}
+.icon-phone:before {
+  content: "\e003";
+}
+.icon-monitor:before {
+  content: "\e004";
+}
+.icon-list:before {
+  content: "\e005";
+}
+.icon-github-2:before {
+  content: "\e006";
+}
+.icon-twitter:before {
+  content: "\e007";
+}
+.icon-linkedin:before {
+  content: "\e008";
+}
+.icon-github-3:before {
+  content: "\e00b";
+}
+.icon-twitter-2:before {
+  content: "\e00c";
+}
+.icon-linkedin-2:before {
+  content: "\e00d";
+}
+.icon-googleplus:before {
+  content: "\e00e";
+}
+.icon-googleplus-2:before {
+  content: "\e00f";
+}
+.icon-comments:before {
+  content: "\e002";
+}
+.icon-user:before {
+  content: "\e00a";
+}
+.socialcount {
+  color: #fff;
+  font-size: .875em;
+  line-height: 2.2em;
+}
+.socialcount > li {
+  background-color: #999999;
+}
+.socialcount > li,
+.socialcount > li > a:focus,
+.socialcount .loading {
+  border-radius: 5px;
+}
+.socialcount > li > a:focus,
+.socialcount > li:hover,
+.socialcount > li.hover {
+  background-color: #464646;
+}
+.socialcount {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 .6em 0;
+  overflow: hidden;
+}
+.socialcount-large {
+  line-height: normal;
+}
+.socialcount:link,
+.socialcount:visited {
+  color: inherit;
+}
+.socialcount > li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  vertical-align: top;
+  min-width: 80px;
+  min-height: 30px;
+  text-align: center;
+  white-space: nowrap;
+  *margin-right: 4px;
+}
+.socialcount-small > li {
+  min-width: 0;
+}
+.socialcount-large > li {
+  float: left;
+  margin: 0 0.6em 0.6em 0;
+}
+.socialcount.recommend .facebook {
+  min-width: 120px;
+}
+.socialcount-small.recommend .facebook {
+  min-width: 0;
+}
+.socialcount-large > li,
+.socialcount-large.recommend .facebook {
+  min-width: 105px;
+}
+.socialcount > li > a {
+  display: block;
+  padding: 0 5px;
+  text-decoration: none;
+  color: inherit;
+}
+.socialcount-small > li > a {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.socialcount-large > li > a {
+  padding: 12px 5px 8px;
+}
+.socialcount .count {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  margin-left: 6px;
+}
+.socialcount-large .count {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  padding-top: 10px;
+}
+.socialcount-small .count {
+  margin-left: 0;
+}
+.socialcount .facebook iframe {
+  height: 21px;
+  width: 90px;
+}
+.socialcount.de_DE .facebook iframe {
+  width: 78px;
+}
+.socialcount.like .facebook iframe {
+  width: 48px;
+}
+.socialcount.like.de_DE .facebook iframe {
+  width: 75px;
+}
+.socialcount .button {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  text-align: center;
+  pointer-events: none;
+}
+.socialcount .button iframe {
+  pointer-events: auto;
+}
+.socialcount-large .button {
+  top: auto;
+  bottom: 2px;
+}
+.socialcount.grade-a.activate-on-hover > li.hover .count,
+.socialcount.grade-a.activate-on-click > li.hover.active .count {
+  text-indent: -999px;
+}
+.socialcount.grade-a.activate-on-hover > li.hover .button,
+.socialcount.grade-a.activate-on-click > li.hover.active .button {
+  display: block;
+}
+.socialcount.grade-a.activate-on-hover > li.hover > a,
+.socialcount.grade-a.activate-on-click > li.hover.active > a {
+  cursor: default;
+}
+.socialcount-small.grade-a.activate-on-hover > li.hover > a,
+.socialcount-small.grade-a.activate-on-click > li.hover.active > a,
+.socialcount.grade-a.activate-on-hover > li.hover .button iframe,
+.socialcount.grade-a.activate-on-click > li.hover.active .button iframe {
+  cursor: pointer;
+}
+.socialcount .loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #aaa;
+  background-color: rgba(170, 170, 170, 0.7);
+  color: #000;
+  text-transform: uppercase;
+  font-size: .75em;
+  text-align: center;
+}
+.socialcount-large .loading {
+  padding-top: 30%;
+}
+.socialcount .loading .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  background: #fff;
+  opacity: 0;
+  border-radius: 50%;
+  -webkit-animation: socialCountLoadingFade .6s infinite;
+  -moz-animation: socialCountLoadingFade .6s infinite;
+  animation: socialCountLoadingFade 0.6s infinite;
+}
+.socialcount .loading .dot:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.socialcount .loading .dot:nth-child(2) {
+  -webkit-animation-delay: .05s;
+  -moz-animation-delay: .05s;
+  animation-delay: 0.05s;
+}
+.socialcount .loading .dot:nth-child(3) {
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  animation-delay: 0.1s;
+}
+@-webkit-keyframes socialCountLoadingFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes socialCountLoadingFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes socialCountLoadingFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*===============================================General Style===========================================*/
+a {
+  -webkit-transition-property: background color;
+  -webkit-transition-duration: 0.12s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-property: background color;
+  -moz-transition-duration: 0.12s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-property: background color;
+  -o-transition-duration: 0.12s;
+  -o-transition-timing-function: ease-out;
+  text-decoration: none;
+  color: #ccc;
+}
+a:visited {
+  opacity: 0.8;
+  /* A bit basic,but it's a bare minumum... */
+
+}
+a:hover {
+  text-decoration: none;
+  color: #ff9900;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+span.ampersand {
+  font-family: Adobe Caslon Pro, Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 110%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/*===============================================Style Header===========================================*/
+nav {
+  background-color: #4B4B4B;
+  border-bottom: 1px solid #1F1E1E;
+}
+.top-nav {
+  width: 50%;
+  margin: 10px auto;
+  font-family: DroidSansRegular;
+  font-weight: lighter;
+  text-align: center;
+}
+.top-nav li {
+  display: inline;
+  margin-right: 20px;
+}
+header {
+  background: url(../images/body-bg-15.png);
+  padding-bottom: 2%;
+  border-bottom: 2px solid #000;
+  box-shadow: 0px 2px 1px #fff;
+  display: inline-block;
+  width: 100%;
+}
+.alldevices {
+  text-align: center;
+  margin: 15px auto;
+}
+.alldevices span {
+  font-size: 100px;
+  line-height: 65px;
+  color: #fff;
+  text-shadow: 1px 2px 1px black;
+}
+.alldevices span.desktop {
+  font-size: 12em;
+}
+.alldevices span.tablet {
+  font-size: 8em;
+}
+.alldevices span.phone {
+  font-size: 5em;
+}
+.slogan {
+  padding: 2% 0;
+  text-align: center;
+}
+hgroup {
+  margin-top: 2%;
+}
+.slogan h1 {
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  color: #F90;
+  text-shadow: 1px 3px 1px black;
+}
+.slogan h2 {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 2.3em;
+  font-family: 'PodkovaRegular', sans-serif;
+  color: #4FEAF0;
+  -ms-text-shadow: 1px 3px 1px black;
+  text-shadow: 1px 3px 1px black;
+}
+.description p {
+  font-family: 'DroidSansRegular', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  padding: 0 1%;
+  -ms-text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 2px 1px black;
+}
+.description p span {
+  color: #f90;
+  font-weight: bold;
+}
+.download {
+  width: 205px;
+  margin: 2.5% auto;
+}
+.download span {
+  margin-top: 10px;
+  color: #868585;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  left: 35px;
+}
+.btn {
+  -moz-box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b));
+  background: -moz-linear-gradient(center top, #9dce2c 5%, #8cb82b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+  background-color: #9dce2c;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #83c41a;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 34px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #689324;
+}
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c));
+  background: -moz-linear-gradient(center top, #8cb82b 5%, #9dce2c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+  background-color: #8cb82b;
+  color: #fff;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+.share {
+  margin: 10px auto;
+  text-align: center;
+}
+.share li {
+  display: inline;
+}
+.tryit {
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+}
+.tryit a {
+  color: #FF9900;
+}
+.tryit a:hover {
+  color: #0000ff;
+}
+/*===============================================Style Features===========================================*/
+.features {
+  background: url(../images/tiny_grid.png);
+  border-bottom: 1px solid #E0E0E0;
+  padding: 3% 0;
+  display: inline-block;
+  width: 100%;
+}
+.features h1 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-shadow: 1px 2px 1px white;
+}
+.features .col4:nth-child(2) {
+  text-align: center;
+}
+.features .col4:nth-child(3) {
+  text-align: right;
+}
+.features p {
+  padding: 2% 0;
+  font-family: 'DroidSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.features h1 span.less {
+  color: #4183C4;
+}
+.features h1 span.sublime {
+  color: #DFA11E;
+}
+.features h1 span.aeonnav {
+  color: #F90;
+}
+.browsers {
+  margin: 40px auto;
+  text-align: center;
+}
+.browsers h1 {
+  color: #333;
+  text-shadow: 1px 1px 1px #ccc;
+}
+.browsers img {
+  margin: 15px auto;
+}
+/*===============================================Style Playground===========================================*/
+.playground {
+  background: url("../images/body-bg-1.png");
+  display: block;
+}
+.playground h1 {
+  font-size: 1.5em;
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-shadow: 1px 2px 1px white;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.playground p {
+  font-family: 'DroidSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+.playground a {
+  color: #FF9900;
+}
+.playground a:hover {
+  color: #0000ff;
+}
+/*===============================================Features Extras===========================================*/
+.featureList {
+  margin: 20px auto;
+}
+.featureList twitter {
+  margin: 20px auto;
+  text-align: center;
+}
+.featureList ul {
+  padding-left: 40px;
+  margin: 10px auto;
+}
+.featureList li {
+  margin-top: 10px;
+  font-family: 'DroidSansRegular', sans-serif;
+  line-height: 1.1em;
+  padding-left: 10px;
+  list-style-type: disc;
+}
+.featureList span {
+  color: #f90;
+}
+.featureList h1 {
+  text-align: left;
+}
+.tryout {
+  margin: 15px auto;
+  display: inline-block;
+  width: 100%;
+}
+.tryout p {
+  text-align: left;
+}
+.wishlist {
+  margin: 20px auto;
+}
+/*===============================================Style Social===========================================*/
+.boxsocial {
+  margin: 3% auto 1%;
+}
+.social {
+  display: block;
+  text-align: center;
+  clear: both;
+}
+ul.socialList {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+.socialList li {
+  display: inline;
+  float: left;
+}
+/*===============================================Style Footer===========================================*/
+footer {
+  float: left;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  background-color: #000;
+  margin-top: 25px;
+}
+footer ul.footerLinks {
+  padding-top: 5px;
+}
+footer ul.footerLinks a {
+  color: #cccccc;
+}
+footer ul.footerLinks a:hover {
+  color: #FF9900;
+}
+footer ul.footerLinks_right {
+  padding-top: 5px;
+  text-align: right;
+  color: #ccc;
+}
+footer ul.footerLinks li {
+  display: inline;
+  margin-right: 5px;
+  font-family: 'DroidSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+footer ul.footerLinks_right li {
+  display: inline;
+  font-family: 'DroidSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+footer ul.footerLinks_right li a {
+  color: #f90;
+}
+footer ul.footerLinks_right li a:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 768px) {
+  .alldevices {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .alldevices span {
+    font-size: 100px;
+    line-height: 65px;
+    color: #fff;
+    text-shadow: 1px 2px 1px black;
+  }
+  .alldevices span.desktop {
+    font-size: 6em;
+  }
+  .alldevices span.tablet {
+    font-size: 5em;
+  }
+  .alldevices span.phone {
+    font-size: 3em;
+  }
+  .download {
+    margin: 10% auto;
+  }
+  .features h1 {
+    margin-top: 20px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer ul.footerLinks {
+    text-align: center;
+  }
+  footer ul.footerLinks_right {
+    text-align: center;
+  }
+  footer ul.footerLinks li {
+    display: inline;
+    margin-right: 12px;
+    font-family: 'DroidSansRegular', sans-serif;
+    font-size: 16px;
+    line-height: 2.4;
+  }
+  .share {
+    width: 100%;
+    text-align: center;
+  }
+}
